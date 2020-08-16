@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>
+            Registration And Log-In Form
+        </title>
+    </head>
+    <body style="background-color: rgb(255, 255, 102);">
+        <form style="background-color: rgb(25, 2, 141);" target="_self" method="post" action="traversa.html" name="log-in"><small> </small>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span style="color: white;">
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i><u><b>Log-in Form</b></u></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="index.html" style="color: white;">Home</a></h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <table name="log-inTable" id="table1" border="0" style="padding: 5px;">
+            <tr id="email">
+                <td style="text-align: right;"><label style="color: white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email :</label></td>
+                <td><input style="color: black;" maxlength="40" size="40" name="email" value="eg; abc.xyz@mno.com"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+            <tr id="password">
+                <td style="text-align: right;"><label style="color: white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password :</label></td>
+                <td><input style="color: black;" maxlength="16" size="40" name="password" type="password"><br style="color: white;"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+            <tr id="submit" style="text-align: center;">
+                <td colspan="2"><!---<a href="traversa.html" style="background-color: white; color: black;">&nbsp;Log-In&nbsp;</a>---><input style="color: black;" name="submit" value="Log-In" type="submit"></td>
+            </tr>
+        </table>
+        </form>
+        <span style="align-items: center;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br />
+            <span style="font-family: 'Times New Roman', Times, serif; color: red;text-align: center;">
+                <h3>If you have not Register Yet?<br>
+                    First Register, Then Log-in to our Website.
+                </h3>
+            </span>
+            <form style="background-color: rgb(25, 2, 141);" target="_self" method="post" action="log-in.html" name="registration">
+                <p>
+                    <h2 align="center" style="color: white;"><i><u><b>Registration Form</b></u></i></h2>
+                </p>
+                <table name="registrationTable" id="table2" align="center">
+                    <tr id="fn">
+                        <td style="text-align: right;"><label style="color: white;">First Name :</label></td>
+                        <td><input style="color: black;" id="fn" maxlength="20" size="40" name="fn" value="eg; Narendra"></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                    <tr id="ln">
+                        <td style="text-align: right;"><label style="color: white;">Last Name :</label></td>
+                        <td><input style="color: black;" id="ln" maxlength="20" size="40" name="ln" value="eg; Modi"></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                    <tr id="add">
+                        <td style="text-align: right;"><label style="color: white;">Address :</label></td>
+                        <td><textarea style="color: black;" id="add" wrap="normal" cols="40" rows="3" name="add">eg; 1772-Linken Street, New York</textarea></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                    <tr id="gender">
+                        <td style="text-align: right;"><label style="color: white;">Gender :</label></td>
+                        <td><input style="color: black;" name="gender" value="m" type="radio"><label style="color: white;"> Male </label>&nbsp; &nbsp; &nbsp;<input style="color: black;" name="gender" value="f" type="radio"><label style="color: white;"> Female</label></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;"><label style="color: white;">City :</label></td>
+                        <td><select style="color: rgb(5, 8, 5);" name="city">
+                            <option>Gujarat</option>
+                            <option>Maharastra</option>
+                            <option>Rajasthan</option>
+                            <option>MP</option>
+                            <option>Kerela</option>
+                            <option>Odissa</option>
+                            <option>Tamilnadu</option>
+                            <option>Kashmir</option>
+                            <option>Zarkhand</option>
+                            <option>Delhi</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;" id="submit"><!---<a href="log-in.html" style="background-color: white; color: black;">&nbsp;Next&nbsp;</a>---><input style="color: black;" name="submit" value="Next" type="submit"></td>
+                        <td style="text-align: center;" id="reset"><input style="color: black;" name="reset" value="Reset" type="reset"></td>
+                    </tr>
+                </table>
+                <h3 align="center">
+                </h3>
+            </form>
+        </span>
+    </body>
+</html>
