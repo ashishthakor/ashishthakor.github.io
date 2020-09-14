@@ -1,32 +1,201 @@
-<html>
-  <head>
-    <title>log-in</title>
-  </head>
-  <body style="background-color: rgb(255, 255, 102);">
-    <center><h4>We are Almost done.Last Step in Registration.</h4></center>
-    <form style="background-color: rgb(25, 2, 141);" target="_self" method="post" action="#" name="login">
-      <table align="center">
-        <tr>
-          <td style="text-align: right; color: white;"><lable >Email :</lable></td>
-          <td><input id="email" maxlength="40" size="40" name="email" value="eg; abc.xyz@gmail/yahoo.com"></td>
-        </tr>
-        <tr>
-          <td colspan="2">&nbsp;</td>
-        </tr>
-        <tr>
-          <td style="text-align: right; color: white;"><lable>Password :</lable></td>
-          <td><input id="password" maxlength="16" size="40" name="passward" type="password"></td>
-        </tr>
-        <tr>
-          <td colspan="2">&nbsp;</td>
-        </tr>
-        <tr style="text-align: center;">
-          <td colspan="2"><a href="traversa.html" style="background-color: white; color: black;">&nbsp;Submit&nbsp;</a><!---<input name="submit" value="Submit" type="submit">---></td>
-        </tr>
-        <tr>
-          <td colspan="2">&nbsp;</td>
-        </tr>
-      </table>
-    </form>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginform</title>
+    <link rel="stylesheet"  type="text/css" href="loginform.css"/>
+<style>
+    body{
+        position: absolute;
+        margin-top:150px;
+        margin-left: 500px;
+        background-color: whitesmoke;
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(baap.jpg) ;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+    .head{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: linen;
+        text-align:center;;
+        display: block;
+        padding-bottom:30px;
+        font-weight: 600;
+        text-decoration:none;
+        border-bottom: black;
+        font-size: 23px;
+        
+        
+
+    }
+    .head:hover{
+     
+        text-shadow: 1px 1px #25aae1;   
+        text-decoration: underline linen;
+        color:black    }
+        
+    .loginform{
+                width: 320px;
+                background:linen;
+                border-radius: 15px;
+                overflow: hidden;
+                box-shadow: 5px 5px 3px 3px  ;
+                margin-left: auto; 
+                margin-right: auto;
+              
+
+        padding-top: 32px;
+        padding-bottom: 35PX;
+    }
+    .loginform *{
+        display: table;
+        margin: 0 auto;
+        height: 35px;
+        
+
+        
+    }
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        text-align: center;
+        display: block;
+        padding-bottom:25px;
+        font-weight: 600;
+        text-decoration:underline;
+        border-bottom: black;
+   }
+    
+    input{
+        border-width: 1px;
+        padding: 5px;
+        transition: all .6s ease-in-out ;
+        outline: 0;
+        border-radius: 15px;
+        border-style: solid;
+        font-size: 16px;
+        line-height: 1.2;
+        display: block;
+        background: transparent;
+        padding: 0px 20px 0px 23px;
+        font-family: sans-serif;
+        box-shadow:inset 0px 0px 21px -9px gray;
+        border: none;
+        width: 85%;
+       height: 15%;
+        align-content: center;
+    }
+    
+    .username{
+        margin-bottom: 20px;
+        width: 100%;
+        padding-top: 60%;
+    }
+    .password{
+        margin-top:23px ;
+        margin-bottom: 15px;
+        width: 100%;
+
+    }
+    input[type="text"]:focus{       
+         box-shadow:  inset 2px 1px 2.5px 1px black;
+
+        outline:none;
+    }
+    input[type="password"]:focus{
+        box-shadow:   inset  2px 1px 2.5px 1px black;
+
+        outline:none;}
+        button{
+            font-size: 20;
+            font-weight: 300;
+            color:black;
+            cursor: pointer;
+            margin-top: 20px;
+            text-align:center;
+            border:"none";
+            background-size:300% 100%;
+            width:110px;
+            border-radius: 50px;
+            transition: all .4s ease-in-out ;
+            background-image:linear-gradient(to right , #25aae1  #4481eb  #04beab #3f86eb);
+            height: 10%;
+            
+        }
+    button:focus{
+        outline: none;
+        border:none;
+        
+
+    }
+ button:hover{
+     transition: all 0.8s ease-in-out;
+     background-color: cyan;
+     color: black;
+
+ }
+ .signup{
+        padding-top:60px;
+        color:blue;
+    
+ }
+ .signup:hover{
+    transition: 1.8s ease-in-out;
+    padding:10px;
+ }
+ a{
+     padding-top: .5px;
+ }
+ a:hover{
+     color: black;
+     transition: .5s ease-out;
+ }
+ .head a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    display: block;
+    padding-bottom:25px;
+    font-weight: 600;
+    text-decoration:underline;
+    border-bottom: black;
+ }
+ @media only screen and (max-width: 768px) {
+  
+  [class*="loginform"] {
+    width: 100%;
+  }
+ }
+</style>
+</head>
+<body>
+    <div class="head">
+        <a href="index.html" >Travsera Adventure</a>
+    </div>
+    <div class="loginform">
+        <h2>
+        <img src="Header-Icon-User.png" width="13% " height="95%"/></h2>
+        <div class="username">
+            <input placeholder="Email-Address" type="text">
+        </div>
+        <div class="password">
+            <input placeholder="Password" type="password">
+        </div>
+        <div>
+        <br/>
+
+        
+            <button class="button">sign in</button></div>
+ <br />
+ 
+ <div>          
+            <span class="don"> dont have an account?
+                <a class="signup" href="registration.html">singup</a> </span>
+      
+      </div>      </div>
+
+    
+</body>
 </html>
