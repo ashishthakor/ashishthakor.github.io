@@ -1,21 +1,20 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>loginform</title>
-    <link rel="stylesheet"  type="text/css" href="loginform.css"/>
 <style>
     body{
         position: absolute;
-        margin-top:150px;
-        margin-left: 500px;
         background-color: whitesmoke;
         background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(baap.jpg) ;
         height: 100vh;
         background-size: cover;
         background-position: center;
+        font-family: sans-serif;
+        transform: translate(-50%, -50%);
     }
     .head{
+        position: absolute;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: linen;
         text-align:center;;
@@ -25,8 +24,9 @@
         text-decoration:none;
         border-bottom: black;
         font-size: 23px;
-        
-        
+        transform: translate(-50%, -50%);
+        margin-top:550px;
+        margin-left: 600px;
 
     }
     .head:hover{
@@ -36,21 +36,24 @@
         color:black    }
         
     .loginform{
+        position: absolute;
                 width: 320px;
                 background:linen;
                 border-radius: 15px;
                 overflow: hidden;
                 box-shadow: 5px 5px 3px 3px  ;
-                margin-left: auto; 
-                margin-right: auto;
-              
-
-        padding-top: 32px;
-        padding-bottom: 35PX;
+                /*margin-top: initial;
+                margin-left: initial; */
+                /*margin-top: 80px;
+                margin-left: 50%;*/
+                margin-top:550px;
+                margin-left: 450px;
+                padding-top: 32px;
+                padding-bottom: 35PX;
     }
     .loginform *{
         display: table;
-        margin: 0 auto;
+        margin: auto;
         height: 35px;
         
 
@@ -162,17 +165,11 @@
     text-decoration:underline;
     border-bottom: black;
  }
- @media only screen and (max-width: 768px) {
-  
-  [class*="loginform"] {
-    width: 100%;
-  }
- }
 </style>
 </head>
 <body>
     <div class="head">
-        <a href="index.html" >Travsera Adventure</a>
+        <a href="index.html" >Travsera&nbsp;Adventure</a>
     </div>
     <div class="loginform">
         <h2>
