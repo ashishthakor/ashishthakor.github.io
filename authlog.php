@@ -1,11 +1,11 @@
 <?php
-include('db_con.php');
+include('dbConnection.php');
 
-$email = $_POST['email'];
-$passwrd = $_POST['pwd'];
+$email = $_POST['your_email'];
+$passwrd = $_POST['your_pass'];
 
 $find_email = "SELECT * FROM register WHERE email = '$email'";
-$query = mysqli_query($conn, $find_email);
+$query = mysqli_query($con, $find_email);
 
 $email_count = mysqli_num_rows($query);
 
@@ -14,7 +14,7 @@ if ($email_count) {
     $userpassword = $email_pass['pwd'];
     $varifiedpass = password_verify($passwrd, $userpassword);
     if ($varifiedpass) {
-        $_SESSION['fname'] = $email_pass['fname'];
+        $_SESSION['name'] = $email_pass['name'];
         echo "okey welcome man";
         // header("index.php");
         ?>
@@ -38,7 +38,7 @@ else {
     ?>
         <script>
             alert('User Not Found Please Register');
-            location.replace('Login1.php');
+            location.replace('login1.php');
         </script>
         <?php
 }

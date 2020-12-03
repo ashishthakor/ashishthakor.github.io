@@ -1,38 +1,5 @@
 <?php
-    session_start();
-    include('dbConnection.php');       
-        
-        $fname = $_POST['name'];
-        $email = $_POST['email'];
-        $pass = $_POST['pwd'];
-        $getquery = "SELECT * FROM register WHERE email = '$email'";
-        $res = mysqli_query($con,$getquery);
-        $no = mysqli_num_rows($email);
-        if ($no) {
-            ?>
-            <script>
-                alert("Email Id Alredy Exist");
-                location.replace("Login1.php");
-            </script>
-            <?php
-        }
-        else {
-            $hashedpass = password_hash($pass, PASSWORD_DEFAULT);
-            $query = "INSERT INTO register (fname, email, pwd)
-            VALUES ('$fname',$email','$hashedpass')";
-            mysqli_query($con, $query);
-            ?>
-            <script>
-                alert("user added");            
-            </script>
-            <?php
-            $_SESSION['fname'] = $fname;
-            ?>
-            <script>
-            location.replace("index.php");</script>
-            <?php
-            
-        }
+    session_start();     
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -124,7 +91,7 @@
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">Sign up</h2>
-                        <form name="f1" action="9-a.php" method="POST" class="register-form" id="register-form"  onsubmit="return(validate());">
+                        <form name="f1" action="authreg.php" method="POST" class="register-form" id="register-form"  onsubmit="return(validate());">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="name" id="name" placeholder="Your Name"/>

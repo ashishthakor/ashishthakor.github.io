@@ -1,7 +1,8 @@
 <?php
         session_start();
-        include('db_con.php');       
-            $fname = $_POST['fname'];
+        include('dbConnection.php');  
+        
+            $name = $_POST['name'];
             $email = $_POST['email'];
 
             $pass = $_POST['pwd'];
@@ -20,15 +21,15 @@
             }
             else {
                 $hashedpass = password_hash($pass, PASSWORD_DEFAULT);
-                $query = "INSERT INTO register (fname, email, pass)
-                VALUES ('$fname', '$email', '$hashedpass')";
-                mysqli_query($conn, $query);
+                $query = "INSERT INTO `register`(`name`, `email`, `pwd`)
+                 VALUES ('$name', '$email', '$hashedpass')";
+                mysqli_query($con, $query);
                 ?>
                 <script>
                     alert("user added");            
                 </script>
                 <?php
-                $_SESSION['fname'] = $fname;
+                $_SESSION['name'] = $name;
                 ?>
                 <script>
                 location.replace("index.php");</script>

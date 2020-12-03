@@ -31,7 +31,7 @@
 
                     <div class="signin-form">
                         <h2 class="form-title">Login in</h2>
-                        <form name="f1" method="POST" class="register-form" id="login-form">
+                        <form name="f1" action="authlog.php" method="POST" class="register-form" id="login-form">
                             <div class="form-group">
                                 <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="email" name="your_email" id="your_email" placeholder="Your Email"/>
