@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,6 +32,28 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    
+    <center><script>
+          function logout(){
+            <?php 
+              session_destroy();
+
+            ?>
+              location.replace('index.php');
+
+          }
+      </script>
+      <?php
+        if (isset($_SESSION['fname'])) {
+          echo "Logged in as : <b>"; echo $_SESSION['fname'];
+          echo "</b> <p style='color:blue; float:right;' onclick='logout()'>Logout <p>";
+        }
+        else{
+          echo "Not Logged in yet Click Login";
+          
+        }
+      ?>
+    </center>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
         <a class="navbar-brand" href="index.html">Traversa<span>Adventures</span></a>
@@ -37,11 +63,11 @@
 
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="destination.html" class="nav-link">Destination</a></li>
-            <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="destination.php" class="nav-link">Destination</a></li>
+            <li class="nav-item"><a href="login.php" class="nav-link">Login</a></li>
+            <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
             <li class="nav-item cta"><a href="#" class="nav-link">Book Now</a></li>
 
           </ul>

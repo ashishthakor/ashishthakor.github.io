@@ -1,4 +1,6 @@
-
+<?php
+ session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +25,8 @@
                 <div class="signin-content">
                     <div class="signin-image">
                         <figure><img src="images1/signin-image.jpg" alt="sing up image"></figure>
-                        <a href="login1.html" class="signup-image-link">Create an account</a>
+                        <a href="login1.php" class="signup-image-link">Create an account</a>
+                        <a href="index.php" class="signup-image-link">Home</a>
                     </div>
 
                     <div class="signin-form">
