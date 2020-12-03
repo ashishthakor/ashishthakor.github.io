@@ -44,9 +44,9 @@ session_start();
           }
       </script>
       <?php
-        if (isset($_SESSION['fname'])) {
-          echo "Logged in as : <b>"; echo $_SESSION['fname'];
-          echo "</b> <p style='color:blue; float:right;' onclick='logout()'>Logout <p>";
+        if (isset($_SESSION['name'])) {
+          echo "Logged in as : <b>"; echo $_SESSION['name'];
+          echo "</b> <p style='color:red; float:right;' onclick='logout()'>Logout <p>";
         }
         else{
           echo "Not Logged in yet Click Login";
