@@ -91,7 +91,7 @@
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">Sign up</h2>
-                        <form name="f1" action="authreg.php" method="POST" class="register-form" id="register-form"  onsubmit="return(validate());">
+                        <form name="f1" action="phpreg.php" method="POST" class="register-form" id="register-form"  onsubmit="return(validate());">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="name" id="name" placeholder="Your Name"/>

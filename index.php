@@ -1,5 +1,5 @@
 <?php
-session_start();
+  session_start();
 
 ?>
 
@@ -32,8 +32,7 @@ session_start();
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    
-    <center><script>
+  <script>
           function logout(){
             <?php 
               session_destroy();
@@ -42,21 +41,12 @@ session_start();
               location.replace('index.php');
 
           }
-      </script>
-      <?php
-        if (isset($_SESSION['name'])) {
-          echo "Logged in as : <b>"; echo $_SESSION['name'];
-          echo "</b> <p style='color:red; float:right;' onclick='logout()'>Logout <p>";
-        }
-        else{
-          echo "Not Logged in yet Click Login";
-          
-        }
-      ?>
-    </center>
+  </script>
+      
+
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Traversa<span>Adventures</span></a>
+        <a class="navbar-brand" href="index.php">Traversa<span>Adventures</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> Menu
         </button>
@@ -69,6 +59,20 @@ session_start();
             <li class="nav-item"><a href="login.php" class="nav-link">Login</a></li>
             <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
             <li class="nav-item cta"><a href="#" class="nav-link">Book Now</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">
+              <?php
+                if (isset($_SESSION['name'])) {
+                  echo "Logged in as : <b>"; echo $_SESSION['name'];
+                  echo "</b> <p style='color:red; float:right;' onclick='logout()'>Logout <p>";
+                  ?><a href="deleteacc.php?em=$result[email]">Delete Account</a>
+                <?php 
+                }
+                else{
+                  echo "<p style='color:red; float:right;'> Not Login Yet...!</p>";
+                  
+                }
+              ?></a>
+            </li>
 
           </ul>
         </div>

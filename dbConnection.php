@@ -3,7 +3,7 @@
     if (mysqli_connect_error()) {
         die("can not connect to databse right now");
     }
-    else {
+    else{
         
     }
 ?>
